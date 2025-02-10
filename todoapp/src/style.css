@@ -1,0 +1,124 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('./pages/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: #333;
+}
+
+.home-container {
+  padding: 20px;
+}
+
+.main-heading {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.task-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.task-input {
+  width: 50%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-task-button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task-sections {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.task-section {
+  width: 30%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.todo {
+  background-color: lightblue;
+}
+
+.ongoing {
+  background-color: lightgray;
+}
+
+.completed {
+  background-color: lightgreen;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: none;
+  z-index: 10;
+}
+
+.dropdown-button:hover + .dropdown-menu,
+.dropdown-menu:hover {
+  display: block;
+}
+
+.clear-all-button {
+  width: 100%;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
